@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;1,100&family=Klee+One:wght@400;600&display=swap");
+
+:root {
+  --primary-color: #f3f5fc;
+  --secondary-color: #0A3871;
+  --background-color: #000000;
+  --text-color: #495057;
+  --text-color-bold: #343a40;
+  --white-color: #fff;
+
+  --font-family-Barlow: "Barlow", sans-serif;
+  --font-family-Klee: "Klee One", cursive;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family-Barlow);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: var(--text-color-bold);
+}
+
+img {
+  max-width: 100%;
+}

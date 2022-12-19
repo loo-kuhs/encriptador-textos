@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Encriptador de Textos - G4 Challenge 1</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./assets/css/css/main.css" rel="stylesheet" />
+    <title>Descifrador de Textos - G4 Challenge 01</title>
   </head>
   <body>
-  
+
+    <header class="header">
+      <div class="header__container">
+        <img
+          src="./assets/images/logo.svg"
+          alt="alura logo"
+          class="header__img"
+        />
+      </div>
+    </header>
+
+    <main class="main main__container">
+      <form class="form">
+        <textarea class="form__input" id="text-decipher" placeholder="Input your text here"></textarea>
+
+        <div class="form__actions">
+          <button id="btn-cipher" class="button button__primary">Cipher</button>
+          <button id="btn-decipher" class="button button__secondary">Decipher</button>
+        </div>
+      </form>
+    </main>
+
+
   </body>
 </html>
