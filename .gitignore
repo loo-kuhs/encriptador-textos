@@ -3,3 +3,10 @@
 
 # CSS
 *.css.map
+*.css.cache
+css.map
+css.cache
+
+# Sass
+*.sass.cache
+*.scss.cache

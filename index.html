@@ -18,17 +18,31 @@
       </div>
     </header>
 
-    <main class="main main__container">
+    <main class="main__container container">
       <form class="form">
         <textarea class="form__input" id="text-decipher" placeholder="Input your text here"></textarea>
 
         <div class="form__actions">
+          <span class="form__warning">Lowercase letters only and without accents</span>
           <button id="btn-cipher" class="button button__primary">Cipher</button>
           <button id="btn-decipher" class="button button__secondary">Decipher</button>
         </div>
       </form>
     </main>
 
+    <aside class="aside__container container">
+
+      <div id="aside-message" class="aside__cipher invisible">
+        <section id="ciphered-text" class="ciphered__text"></section>
+        <button id="btn-copy" class="button button__secondary">Copy</button>
+      </div>
+
+      <div id="aside-no-message" class="aside__no_message">
+        <img src="./assets/images/guy-looking.png" alt="searching" class="aside__img">
+        <h2 class="aside__title">No hidden message found in text input</h2>
+        <p class="aside__text">Type your text and click on the button</p>
+      </div>
+    </aside>
 
   </body>
 </html>

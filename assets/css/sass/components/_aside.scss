@@ -1,0 +1,17 @@
+@use './mixins';
+
+.aside__container {
+  background-color: var(--white-color);
+  border-radius: 2rem;
+  padding: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+
+  
+}

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;1,100&family=Klee+One:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;1,100&family=Klee+One:wght@400;600&display=swap"); /* Media queries aliases and breakpoints */
 :root {
   --primary-color: #f3f5fc;
   --secondary-color: #0A3871;
@@ -51,6 +51,8 @@ img {
   padding: 1rem 1.5rem;
   width: 48.5%;
   font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
 }
 .button:focus {
   outline: none;
@@ -125,10 +127,61 @@ img {
 .main__container .form .form__input:focus-visible {
   outline: 2px solid var(--white-color);
 }
+.main__container .form .form__input:hover {
+  outline: 2px solid var(--white-color);
+}
+.main__container .form .form__warning {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.main__container .form .form__warning::before {
+  content: url(../../images/warning.svg);
+  margin-right: 0.25rem;
+  vertical-align: middle;
+}
 .main__container .form .form__actions {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1023px) {
+  .main__container {
+    position: static;
+    top: 0;
+    left: 0;
+    margin-right: 10rem;
+    max-width: calc(100vw - 2em);
+    width: 100%;
+  }
+  .main__container .form {
+    height: 65vh;
+  }
+}
+@media (max-width: 767px) {
+  .form {
+    height: 55vh;
+  }
+  .form .form__actions .button {
+    width: 100%;
+  }
+  .form .form__actions .button:nth-child(2) {
+    margin-bottom: 1rem;
+  }
+}
+.aside__container {
+  background-color: var(--white-color);
+  border-radius: 2rem;
+  padding: 2rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
 }
 
 /*# sourceMappingURL=main.css.map */

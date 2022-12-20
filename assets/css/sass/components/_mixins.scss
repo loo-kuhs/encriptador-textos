@@ -1,0 +1,15 @@
+/* Media queries aliases and breakpoints */
+$mq-tablet: 767px;
+$mq-desktop: 1023px;
+
+@mixin mq($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: $mq-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media screen and (min-width: $mq-desktop) {
+      @content;
+    }
+  }
+}
