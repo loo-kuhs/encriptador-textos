@@ -1,0 +1,66 @@
+@use "mixins";
+
+@include mixins.mq(desktop) {
+  .main__container {
+    position: static;
+    top: 0;
+    left: 0;
+    margin-right: 10rem;
+    max-width: calc(100vw - 2em);
+    width: 100%;
+
+    .form {
+      height: 65vh;
+    }
+  }
+
+  .aside__container {
+    margin-top: 4rem;
+    margin-bottom: 2.5rem;
+    max-width: calc(100vw - 2em);
+    position: static;
+    width: 100%;
+
+    &.container {
+      margin-right: 1em;
+    }
+
+    .aside__ciphered {
+      display: block;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .aside__no-message {
+      .aside__img {
+        display: none;
+      }
+    }
+  }
+
+  .footer__container {
+    height: 3em;
+    position: static;
+    width: 100%;
+
+    .container {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@include mixins.mq(tablet) {
+  .form {
+    height: 55vh;
+
+    .form__actions {
+      .button {
+        width: 100%;
+
+        &:nth-child(2) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}

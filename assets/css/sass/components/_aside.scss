@@ -1,5 +1,3 @@
-@use './mixins';
-
 .aside__container {
   background-color: var(--white-color);
   border-radius: 2rem;
@@ -13,5 +11,36 @@
   justify-content: center;
   width: 25%;
 
-  
+  &.container {
+    margin-right: 0;
+  }
+
+  .aside__ciphered {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+
+    .ciphered__text {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+
+  .aside__no-message {
+    text-align: center;
+
+    .aside__img {
+      margin-bottom: 2rem;
+    }
+
+    .aside__title {
+      margin-bottom: 1rem;
+    }
+  }
 }

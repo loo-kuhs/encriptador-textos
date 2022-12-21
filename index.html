@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="./assets/css/css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/css/main.css" />
     <title>Descifrador de Textos - G4 Challenge 01</title>
   </head>
   <body>
-
     <header class="header">
-      <div class="header__container">
+      <div class="container">
         <img
           src="./assets/images/logo.svg"
           alt="alura logo"
@@ -20,29 +20,51 @@
 
     <main class="main__container container">
       <form class="form">
-        <textarea class="form__input" id="text-decipher" placeholder="Input your text here"></textarea>
+        <textarea
+          class="form__input"
+          id="text-decipher"
+          placeholder="Input your text here"
+        ></textarea>
 
         <div class="form__actions">
-          <span class="form__warning">Lowercase letters only and without accents</span>
+          <span class="form__warning"
+            >Lowercase letters only and without accents</span
+          >
           <button id="btn-cipher" class="button button__primary">Cipher</button>
-          <button id="btn-decipher" class="button button__secondary">Decipher</button>
+          <button id="btn-decipher" class="button button__secondary">
+            Decipher
+          </button>
         </div>
       </form>
     </main>
 
     <aside class="aside__container container">
-
-      <div id="aside-message" class="aside__cipher invisible">
+      <div id="aside-message" class="aside__ciphered invisible">
         <section id="ciphered-text" class="ciphered__text"></section>
         <button id="btn-copy" class="button button__secondary">Copy</button>
       </div>
 
-      <div id="aside-no-message" class="aside__no_message">
-        <img src="./assets/images/guy-looking.png" alt="searching" class="aside__img">
+      <div id="aside-no-message" class="aside__no-message">
+        <img
+          src="./assets/images/guy-looking.png"
+          alt="searching"
+          class="aside__img"
+        />
         <h2 class="aside__title">No hidden message found in text input</h2>
         <p class="aside__text">Type your text and click on the button</p>
       </div>
     </aside>
 
+    <footer class="footer__container">
+      <section class="container">
+        <h2 class="footer__title">
+          Project made for
+          <a href="https://www.linkedin.com/in/lucasbear" target="_blank">
+            Carlos Lucas
+          </a>
+        </h2>
+        <p class="footer__paragraph">Oracle One Next Education - Alura</p>
+      </section>
+    </footer>
   </body>
 </html>
