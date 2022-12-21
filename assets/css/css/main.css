@@ -14,7 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -116,7 +116,7 @@ img {
   font-family: var(--font-family-Klee);
   padding: 0.5rem 1rem;
   width: 100%;
-  height: 12rem;
+  /* height: 12rem; */
 }
 .main__container .form .form__input::placeholder {
   color: var(--white-color);
