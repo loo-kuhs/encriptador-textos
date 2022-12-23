@@ -24,10 +24,13 @@ The encryption "keys" we will use are as follows:
 + The letter "o" is converted to "ober".
 + The letter "u" is converted to "ufat".
 
-## Status of project
+<br>
 
-The project is finished.
+---
+## Status of project: **finished**
 
 <p align="center" >Alura Badge</p>
 
-<p align="center" ><img style="width: 30%" src="./assets/images/cms_files_10224_1671210503Prancheta_3.png"/></p>
+<p align="center" ><img style="width: 20%" src="./assets/images/cms_files_10224_1671210503Prancheta_3.png"/></p>
+
+<br>
