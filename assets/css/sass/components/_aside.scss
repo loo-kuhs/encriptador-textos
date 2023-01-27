@@ -11,20 +11,23 @@
   justify-content: center;
   width: 25%;
 
-  &.container {
+  .container {
     margin-right: 0;
   }
 
   .aside__ciphered {
-    display: flex;
-    flex-direction: column;
     height: 100%;
-    justify-content: space-between;
     width: 100%;
 
     .ciphered__text {
-      font-size: 1.5rem;
       margin-bottom: 1rem;
+      font-size: 14pt;
+      overflow-y: auto;
+      height: 90%;
+
+      &::-webkit-scrollbar {
+        width: 0.5rem;
+      }
     }
 
     .button {

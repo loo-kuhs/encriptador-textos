@@ -1,6 +1,12 @@
 @use "mixins";
 
 @include mixins.mq(desktop) {
+  .header {
+    justify-content: center;
+    align-content: center;
+    height: 5rem;
+  }
+
   .main__container {
     position: static;
     top: 0;
@@ -50,6 +56,12 @@
 }
 
 @include mixins.mq(tablet) {
+  .header {
+    justify-content: center;
+    align-content: center;
+    height: 5rem;
+  }
+
   .form {
     height: 55vh;
 

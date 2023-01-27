@@ -16,12 +16,16 @@ textToCipher.addEventListener("input", () => {
 cipherButton.addEventListener("click", (event) => {
   event.preventDefault();
   cipheredText.textContent = textEncode("cipher");
+  textToCipher.value = ''
+  asideNoMsg.classList = 'invisible'
+  asideMsg.classList.remove('invisible')
 });
 
 /* Decipher text */
 decipherButton.addEventListener("click", (event) => {
   event.preventDefault();
   cipheredText.textContent = textEncode("decipher");
+  textToCipher.value = ''
 });
 
 /* Copy text */
