@@ -232,11 +232,10 @@ img {
     position: static;
     width: 100%;
   }
-  .aside__container.container {
+  .aside__container .container {
     margin-right: 1em;
   }
   .aside__container .aside__ciphered {
-    display: block;
     max-width: 100%;
     text-align: center;
   }

@@ -27,12 +27,11 @@
     position: static;
     width: 100%;
 
-    &.container {
+    .container {
       margin-right: 1em;
     }
 
     .aside__ciphered {
-      display: block;
       max-width: 100%;
       text-align: center;
     }
